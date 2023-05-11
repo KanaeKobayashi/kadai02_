@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんTime</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_main.css">
+    <link rel="shortcut icon" href="img/janken-plate_ec.png" type="image/x-icon">
+</head>
+<body class="wrapper">
+    <div>
+        <h1 class="tytle">Rock Paper Scissors</h1>
+        <p>何回勝てるかな？</p>
+
+    </div>
+    <div>
+        <div class="btn_start">        
+            <button id="start_btn" class="start_btn">Start</button>  
+            <audio id="btn_audio">
+                <source src ="music/1_006_じゃーんけーん、ぽん.mp3" type="audio/mp3">
+            </audio>
+            <p id="jankenpon">はじまるよ</p>
+        </div>
+    </div>
+
+
+<div class="btn_set">
+    <button id="rock" class="btn" data-score="0">ぐー</button>
+    <button id="scissors" class="btn" data-score="1">ちょき</button>
+    <button id="paper" class="btn" data-score="2">ぱー</button>
+    
+</div>
+<div class="boad">
+    <div class="panel player">
+        <h2 class="yours">あなた</h2>
+        <div id="g_btn_str_you">?</div>
+    </div>
+    <div class="panel computer">
+        <h2 class="comH">コンピュータ</h2>
+    <div id="g_btn_str_con">?</div>
+    </div>
+</div>
+    <div id="g_resultArea">スコア</div>
+
+    <div class="score">
+        <div>勝ち:<span id="win">0</span>回</div>
+        <div>負け:<span id="lose">0</span>回</div>
+    </div>
+
+    <button class="reStart" onClick="window.location.reload();">Restart</button>
+
+
+
+
+
+    <!-- スクリプト -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
